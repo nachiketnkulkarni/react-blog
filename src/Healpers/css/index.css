@@ -5,13 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.text-small {
-  font-size: 0.9rem !important;
-}
-
-body {
   min-height: 110vh;
   background-color: #4ca1af;
   background-image: linear-gradient(135deg, #4ca1af 0%, #c4e0e5 100%);
@@ -29,23 +22,15 @@ body {
   font-size: 45px;
 }
 
-/* Change navbar styling on small viewports */
-@media (max-width: 991.98px) {
-  .navbar {
-    background: #fff;
-  }
-
-  .sectionHeight {
-    padding: 1em 0;
-  }
-  .sectionHeader {
-    font-size: 30px;
-  }
+.sectionData {
+  margin-top: 3em;
 }
 
-@media (min-widh: 992px) {
+.oddSection {
+  background-color: #3e92a3;
 }
 
+/************************************************************ Top section ***********************************************/
 .bg-cover {
   background-size: cover !important;
   min-height: 95vh;
@@ -62,8 +47,43 @@ body {
   color: #fff !important;
 }
 
-/* ABOUT SECTION */
+/************************************************************ ABOUT SECTION ***********************************************/
 .aboutImage {
   display: block;
   max-width: 95%;
+}
+
+/************************************************************ CARD SECTION ***********************************************/
+.row {
+  margin: 0;
+}
+
+.lineClamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.see-all {
+  padding-right: 1em;
+  text-decoration: none;
+}
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+  .navbar {
+    background: #fff;
+  }
+
+  .sectionHeight {
+    padding: 1em 0;
+  }
+  .sectionHeader {
+    font-size: 30px;
+  }
+}
+
+@media (min-widh: 992px) {
 }

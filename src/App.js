@@ -1,4 +1,5 @@
 import About from "./Pages/About";
+import BlogSection from "./Pages/BlogSection";
 import Header from "./Pages/Header";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <Header />
       <About />
+      <BlogSection />
     </>
   );
 }

@@ -1,9 +1,10 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import CardComponent from "../Components/CardComponent";
-import TempData from "../Data/TempData";
+import { Link } from "react-router-dom";
 
 function BlogSection(props) {
+  const { data } = props;
   return (
     <div id='blog' className='sectionHeight oddSection'>
       <Container>
@@ -12,15 +13,21 @@ function BlogSection(props) {
         </div>
         <div className='sectionData'>
           <Row>
-            <a href='#' className='ml-auto see-all'>
-              <span style={{ color: "#fff" }}>View all </span>
-            </a>
+            <Link to='/blog' className='ml-auto'>
+              <span className='see-all' style={{ color: "#fff" }}>
+                View all
+              </span>
+            </Link>
           </Row>
           <Row>
-            {TempData.slice(0, 3).map((blog, idex) => {
-              //   console.log(item);
-              return <CardComponent key={blog.id} blog={blog} />;
-            })}
+            {data &&
+              data
+                .slice(data.length - 3, data.length)
+                .reverse()
+                .map((blog) => {
+                  //console.log(blog);
+                  return <CardComponent key={blog._id} blog={blog} Home />;
+                })}
           </Row>
         </div>
       </Container>

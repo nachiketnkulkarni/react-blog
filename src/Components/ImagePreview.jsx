@@ -16,7 +16,7 @@ function ImagePreview(props) {
   };
   return (
     <div>
-      <input type='file' onChange={(e) => onFileChange(e)} />
+      <input type='file' onChange={(e) => onFileChange(e)} accept='image/*' />
       <img src={file} alt='' style={{ maxHeight: "200px" }} />
     </div>
   );

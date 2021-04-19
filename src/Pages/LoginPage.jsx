@@ -1,18 +1,17 @@
 import axios from "axios";
 import { Field, Form, Formik } from "formik";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { initialSignInValues } from "../Healpers/FormInitialValues";
 import { signInSchema } from "../Healpers/FormSchemas";
-import { CheckLogin } from "../Healpers/Functions/Functions";
 
 function LoginPage(props) {
   const [errorPresent, setErrorPresent] = useState(null);
 
-  useEffect(() => {
-    if (CheckLogin()) {
-      props.history.push("/home");
-    }
-  }, [props.history]);
+  // useEffect(() => {
+  //   if (CheckLogin()) {
+  //     props.history.push("/home");
+  //   }
+  // }, [props.history]);
 
   const login = async (val) => {
     try {

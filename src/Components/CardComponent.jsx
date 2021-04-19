@@ -27,12 +27,14 @@ function CardComponent(props) {
             </>
           ) : (
             <>
-              <CardImage img={blog.imageLink} />
+              <CardImage img={blog.imageLink} {...props} />
               <CardBody
                 title={blog.title}
                 description={blog.description}
                 id={blog._id}
+                date={blog.date}
               />
+              <Card.Footer style={{ width: "100%" }}>{blog.date}</Card.Footer>
             </>
           )}
         </Row>

@@ -113,7 +113,10 @@ function AddNewPost(props) {
                   margin
                 />
 
-                <FormUploadFile name='imgLink' setFieldValue={setFieldValue} />
+                <FormUploadFile
+                  name='imageLink'
+                  setFieldValue={setFieldValue}
+                />
 
                 <Button variant='primary' type='submit' className='mt-2'>
                   Submit

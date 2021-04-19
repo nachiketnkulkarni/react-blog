@@ -3,6 +3,13 @@ export const initialSignInValues = {
   password: "",
 };
 
+export const initialSignUpValues = {
+  userName: "",
+  email: "",
+  password: "",
+  confirmPassword: "",
+};
+
 export const initialContactValues = {};
 
 export const initialAddNewPostValues = {

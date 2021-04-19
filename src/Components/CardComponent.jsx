@@ -44,26 +44,3 @@ function CardComponent(props) {
 }
 
 export default CardComponent;
-
-/* <Col md={props.Home && 4}>
-  <Card className={props.Blog ? "m-4" : "m-2"}>
-    <Row>
-      <Col md={4}>
-        <Card.Img
-          variant='top'
-          src={blog.imageLink}
-          className={props.Blog && "blog-card-image"}
-        />
-      </Col>
-      <Col md={7}>
-        <Card.Body>
-          <Card.Title>{blog.title}</Card.Title>
-          <Card.Text className='lineClamp'>{blog.description}</Card.Text>
-          <Link to={`/blog/${blog.id}`} className='ml-auto'>
-            <span className='float-right'>View</span>
-          </Link>
-        </Card.Body>
-      </Col>
-    </Row>
-  </Card>
-</Col>; */
